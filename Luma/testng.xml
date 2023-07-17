@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	 <listeners>
+        <listener class-name="MagnetoFramework.Luma.Listenerreporter.ListenerReporter"></listener>
+    </listeners>
+  <test thread-count="5" name="Account_Creation_Test">
+    <classes>
+      <class name="MagnetoFramework.Luma.tests.Account2"/>
+    </classes>
+  </test> <!-- Test -->
+  <test thread-count="5" name="SignIn_Test">
+    <classes>
+      <class name="MagnetoFramework.Luma.tests.Signin2"/>
+    </classes>
+  </test> <!-- Test -->
+  <test thread-count="5" name="AddToCart_Test">
+    <classes>
+      <class name="MagnetoFramework.Luma.tests.AddToCart2"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
